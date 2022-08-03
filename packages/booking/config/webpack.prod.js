@@ -18,7 +18,7 @@ const prodConfig = {
             name : 'booking',
             filename: 'remoteEntry.js',
             exposes: {
-                './bookingApp': './src/bootstrap',
+                './BookingApp': './src/bootstrap',
             },
             shared: packageJson.dependencies,
         }),

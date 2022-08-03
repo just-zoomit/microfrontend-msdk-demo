@@ -16,7 +16,6 @@ import Progress from './components/Progress';
 const BookingLazy = lazy(() => import('./components/BookingApp'))
 const MarketingLazy = lazy(() => import('./components/MsdkApp'))
 const AuthLazy = lazy(() => import('./components/AuthApp'))
-const MsdkLazy = lazy(() => import('./components/MsdkApp'))
 const DashboardLazy = lazy(() => import('./components/DashboardApp'))
 
 console.log("Marketing App ", MarketingLazy)
