@@ -19,7 +19,6 @@ const AuthLazy = lazy(() => import('./components/AuthApp'))
 const DashboardLazy = lazy(() => import('./components/DashboardApp'))
 
 console.log("Marketing App ", MarketingLazy)
-console.log("MsdkLazy  App ", MsdkLazy )
 console.log("BookingLazy App ", BookingLazy)
 console.log("Global Header App ", Header)
 
@@ -60,8 +59,6 @@ export default () => {
                 </Route>
 
                 <Route path="/msdk" component={MarketingLazy}/>
-
-            
 
                 <Route path="/" component={BookingLazy}/>
                

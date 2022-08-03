@@ -21,7 +21,7 @@ const prodConfig = {
                 booking: `booking@${domain}/booking/latest/remoteEntry.js`,
                 auth: `auth@${domain}/auth/latest/remoteEntry.js`,
                 dashboard: `dashboard@${domain}/dashboard/latest/remoteEntry.js`,
-                mdsk: `msdk@${domain}/msdk/latest/remoteEntry.js`
+                msdk: `msdk@${domain}/msdk/latest/remoteEntry.js`
                 
             },
             shared: packageJson.dependencies,

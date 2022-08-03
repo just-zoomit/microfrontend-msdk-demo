@@ -24,9 +24,9 @@ const devConfig = {
             name : 'container',
             remotes: {
                 booking: 'booking@http://localhost:8081/remoteEntry.js',
-                msdk: 'msdk@http://localhost:8088/remoteEntry.js',
                 auth: 'auth@http://localhost:8082/remoteEntry.js',
-                dashboard: 'dashboard@http://localhost:8083/remoteEntry.js'
+                dashboard: 'dashboard@http://localhost:8083/remoteEntry.js',
+                msdk: 'msdk@http://localhost:8088/remoteEntry.js',
                 
             },
             shared: packageJson.dependencies,
