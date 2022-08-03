@@ -8,16 +8,20 @@ import {
 
 import {createBrowserHistory} from 'history';
 
-// import  MarketingApp  from './components/MarketingApp'; 
+
 // import AuthApp  from './components/AuthApp'; 
 import Header from './components/Header';
 import Progress from './components/Progress';
 
-const MarketingLazy = lazy(() => import('./components/MarketingApp'))
+const BookingLazy = lazy(() => import('./components/BookingApp'))
+const MarketingLazy = lazy(() => import('./components/MsdkApp'))
 const AuthLazy = lazy(() => import('./components/AuthApp'))
+const MsdkLazy = lazy(() => import('./components/MsdkApp'))
 const DashboardLazy = lazy(() => import('./components/DashboardApp'))
 
 console.log("Marketing App ", MarketingLazy)
+console.log("MsdkLazy  App ", MsdkLazy )
+console.log("BookingLazy App ", BookingLazy)
 console.log("Global Header App ", Header)
 
 // Add prefix to css className to aviod collsion 
@@ -46,21 +50,21 @@ export default () => {
           
             <Suspense fallback={ <Progress/> }  >
             <Switch>
+                
                 <Route path="/auth" >
                 <AuthLazy onSignIn={ () => setIsSignedIn(true) }/>
                 </Route>
-                <Route path="/dashboard" >
-                
-                {!isSignedIn && <Redirect to="/" />}
-                
-                    
-                <DashboardLazy/>
 
+                <Route path="/dashboard" >
+                {!isSignedIn && <Redirect to="/" />}    
+                <DashboardLazy/>
                 </Route>
 
-                <Route path="/" component={MarketingLazy}/>
+                <Route path="/msdk" component={MarketingLazy}/>
 
-               
+            
+
+                <Route path="/" component={BookingLazy}/>
                
             </Switch>
 

@@ -37,7 +37,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN_DEMO }}
 
       #Deply to AWS S3 via CLI
       - uses: shinyinc/action-aws-cli@v1.2
@@ -49,10 +49,10 @@ jobs:
           AWS_DEFAULT_REGION: us-east-1
       
       
-      # - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/container/latest/index.html"
-      #   env: 
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     AWS_EC2_METADATA_DISABLED: true
-      #     AWS_DEFAULT_REGION: us-east-1
+      - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID_DEMO }} --paths "/container/latest/index.html"
+        env: 
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_DEMO }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEMO }}
+          AWS_EC2_METADATA_DISABLED: true
+          AWS_DEFAULT_REGION: us-east-1
           
