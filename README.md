@@ -1,6 +1,14 @@
 
 #### To Get Start, rum npm start in each folder. The container will have all of the mircofrontend.
 
+ $ cd container && npm start 
+
+ $ cd booking && npm start 
+
+ $ cd auth && npm start 
+
+ $ cd msdk && npm start 
+
 ####  Requirement #1 for Inflexible Frontend Architecture:
 * Zero coupling between child projects  
 
