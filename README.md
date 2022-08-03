@@ -11,7 +11,7 @@
 
 
 <details>
-<summary> **Requirement #1 for Inflexible Frontend Architecture**</summary>
+<summary> Requirement #1 for Inflexible Frontend Architecture</summary>
 <ul>
 <li> Zero coupling between child projects </li>
 <li> No importing of functions/objects/classes./etc</li>
@@ -21,7 +21,7 @@
 </details>
 
 <details>
-<summary> **Requirement #2 for Inflexible Frontend Architecture**</summary>
+<summary> Requirement #2 for Inflexible Frontend Architecture</summary>
 <ul>
 <li> Nero-zero coupling between container and child apps </li>
 <li> Container shouldn't assume that a child is using a particular framework</li>
@@ -30,21 +30,21 @@
 </details>
 
 <details>
-<summary> **Requirement #3 for Inflexible Frontend Architecture**</summary>
+<summary> Requirement #3 for Inflexible Frontend Architecture</summary>
 <ul>
 <li> CSS from one project shouldn’t affect another, CSS should be scoped and not shared. Change to one project, should not affect another.</li>
 </ul>
 </details>
 
 <details>
-<summary> **Requirement #4 for Inflexible Frontend Architecture**</summary>
+<summary> Requirement #4 for Inflexible Frontend Architecture</summary>
 <ul>
 <li> Version Control (mono-repo vs separate shouldn’t have any impact on the overall project) </li>
 </ul>
 </details>
 
 <details>
-<summary> **Requirement #5 for Inflexible Frontend Architecture**</summary>
+<summary> Requirement #5 for Inflexible Frontend Architecture</summary>
 <ul>
 <li> Container should be able to decide to always use the latest version of a mirco-frontend or specify version </li>
 <ul>

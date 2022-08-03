@@ -10,8 +10,8 @@ on:
     - main
 
   # #Only runs when chage made to container directory
-  #   paths:
-  #   - 'packages/container/**'
+    paths:
+    - 'packages/container/**'
 
   pull_request:
     branches: [ "main" ]
