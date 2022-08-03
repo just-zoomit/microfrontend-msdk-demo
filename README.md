@@ -1,22 +1,24 @@
 
-#### To Get Start, rum npm start in each folder. The container will have all of the mircofrontend.
+#### The container will have all of the mircofrontend. To rum apps navigate to each subapp folder and run npm start: 
 
- $ cd container && npm start 
+ `$ cd container && npm start `
 
- $ cd booking && npm start 
+ `$ cd booking && npm start `
 
- $ cd auth && npm start 
+ `$ cd auth && npm start `
 
- $ cd msdk && npm start 
+` $ cd msdk && npm start `
 
-####  Requirement #1 for Inflexible Frontend Architecture:
-* Zero coupling between child projects  
 
-* No importing of functions/objects/classes./etc
-
-* No shared state
-
-* Shared libraries through Module Federation System is okay
+<details>
+#### <summary>Requirement #1 for Inflexible Frontend Architecture</summary>
+<ul>
+<li> Zero coupling between child projects </li>
+<li> No importing of functions/objects/classes./etc</li>
+<li> No shared state</li>
+<li> Shared libraries through Module Federation System is okay</li>
+</ul>
+</details>
 
 ####  Requirement #2 for Inflexible Frontend Architecture:
 
@@ -43,4 +45,4 @@
   * (2) Container can specify exactly what version of a child it wants to use (requires a redeploy change)
 
 # Notes
-* If change made to Webpack, must restart server for it to take affect
+* If change made to Webpack configuration files, must restart server for it to take affect
