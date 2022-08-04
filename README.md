@@ -2,10 +2,10 @@
 This sample app serves to demonstrate an example of micro-frontend implementation with Zoom Meeting SDK. It consists of the following apps in the respective directories:
 
 * container (container app)
-* auth (micro-frontend app)
-* booking (micro-frontend app)
-* dashboard (micro-frontend app)
-* msdk (micro-frontend app)
+* auth app (micro-frontend app)
+* booking app (micro-frontend app)
+* dashboard app (micro-frontend app)
+* msdk app  (micro-frontend app)
 ---
 ## Prerequisites :
 * AWS account along with Key containing  S3 and CloudFront access
@@ -117,7 +117,9 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 <li>Click Create user</li>
 </details>
 
-#### Requirements for Inflexible Frontend Architecture
+---
+
+##### Requirements for Inflexible Frontend Architecture
 <details>
 <summary> Requirement #1 </summary>
 <ul>
