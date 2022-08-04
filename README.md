@@ -89,7 +89,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 <li>Click Create user</li>
 </details>
 
-## Requirements for Inflexible Frontend Architecture
+#### Requirements for Inflexible Frontend Architecture
 <details>
 <summary> Requirement #1 </summary>
 <ul>
