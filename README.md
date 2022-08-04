@@ -8,16 +8,18 @@ This sample app serves to demonstrate an example of micro-frontend implementatio
 * msdk (micro-frontend app)
 
 #### The container will have all of the mircofrontend. To rum apps navigate to each subapp folder and run npm start: 
+```
+ $ cd container && npm start 
 
- `$ cd container && npm start `
+ $ cd booking && npm start 
 
- `$ cd booking && npm start `
+ $ cd auth && npm start 
 
- `$ cd auth && npm start `
+ $ cd msdk && npm start 
 
-` $ cd msdk && npm start `
+```
 
-# S3 Bucket Creation and Configuration
+## S3 Bucket Creation and Configuration
 <details>
 <summary> Steps </summary>
 <ul>
@@ -49,7 +51,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 </ul>
 </details>
 
-# CloudFront setup
+## CloudFront setup
 <details>
 <summary> Steps </summary>
 <ul>
@@ -70,7 +72,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 <li>Set HTTP Response Code to 200: OK</li>
 </details>
 
-# Create IAM user
+## Create IAM user
 <details>
 <summary> Steps </summary>
 <ul>
@@ -87,7 +89,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 <li>Click Create user</li>
 </details>
 
-# Requirements for Inflexible Frontend Architecture
+## Requirements for Inflexible Frontend Architecture
 <details>
 <summary> Requirement #1 </summary>
 <ul>
@@ -133,5 +135,5 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 </details>
  
 
-# Notes
+## Notes
 * If change made to Webpack configuration files, must restart server for it to take affect
