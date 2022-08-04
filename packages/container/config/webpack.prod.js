@@ -1,6 +1,14 @@
 const { merge } = require('webpack-merge')
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
+/**
+ * Definition: 
+ * The ModuleFederationPlugin allows a build to provide or 
+ * consume modules with other independent builds at runtime.
+ * ModuleFederationPlugin:  
+ * https://webpack.js.org/plugins/module-federation-plugin/#root
+ * 
+*/
 const commonConfig = require('./webpack.common')
 const packageJson = require('../package.json')
 
@@ -9,10 +17,10 @@ const domain = process.env.PRODUCTION_DOMAIN;
 
 
 const prodConfig = {
-    mode: 'production',
-    output: {
-        filename: '[name].[contenthash].js', 
-        publicPath: '/container/latest/'
+    mode: 'production', // Chosen mode tells webpack to use its built-in optimizations accordingly.
+    output: {  // options related to how webpack emits results
+        filename: '[name].[contenthash].js',  // the filename template for entry chunks
+        publicPath: '/container/latest/' // the url to the output directory resolved relative to the HTML page
     },
     plugins: [
         new ModuleFederationPlugin({

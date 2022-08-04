@@ -33,12 +33,12 @@ function App() {
     var signatureEndpoint = 'https://msdksig.herokuapp.com/'
     // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
     var sdkKey = '4ASmoeC9qV2BAcj8XFNPD9GK9uTrg60582Fm'
-    var meetingNumber = '92880014699'
+    var meetingNumber = '97372367793'
     var role = 0
     var leaveUrl = 'http://localhost:8080'
     var userName = 'React'
     var userEmail = 'donte.zoomie@gmail.com'
-    var passWord = '623943'
+    var passWord = '541141'
     // pass in the registrant's token if your meeting or webinar requires registration. More info here:
     // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
     // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
