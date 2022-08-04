@@ -7,6 +7,10 @@ This sample app serves to demonstrate an example of micro-frontend implementatio
 * dashboard (micro-frontend app)
 * msdk (micro-frontend app)
 
+## Prerequisites :
+* AWS account along with Key containing  S3 and CloudFront access
+
+
 #### The container will have all of the mircofrontend. To rum apps navigate to each subapp folder and run npm start: 
 ```
  $ cd container && npm start 
