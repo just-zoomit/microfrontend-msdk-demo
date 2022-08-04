@@ -10,20 +10,42 @@ This sample app serves to demonstrate an example of micro-frontend implementatio
 ## Prerequisites :
 * AWS account along with Key containing  S3 and CloudFront access
 
-
-#### The container will have all of the mircofrontend. To rum apps navigate to each subapp folder and run npm start: 
-```
- $ cd container && npm start 
-
- $ cd booking && npm start 
-
- $ cd auth && npm start 
-
- $ cd msdk && npm start 
+### Starting the container app: container
+The container will have all of the mircofrontend. Navigate to the container directory and run the following:
 
 ```
+ $ cd container 
+ 
+ $ npm start 
 
-## S3 Bucket Creation and Configuration
+```
+### Starting the micro-frontend: booking
+You can similarly navigate to the booking directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8081/
+
+```
+ $ cd  booking 
+ 
+ $ npm start 
+```
+
+### Starting the micro-frontend: auth
+You can similarly navigate to the auth directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8082/
+
+```
+ $ cd  auth 
+ 
+ $ npm start 
+```
+### Starting the micro-frontend: msdk 
+You can similarly navigate to the msdk directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8088/
+
+```
+ $ cd msdk  
+ 
+ $ npm start 
+```
+
+### S3 Bucket Creation and Configuration
 <details>
 <summary> Steps </summary>
 <ul>
@@ -55,7 +77,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 </ul>
 </details>
 
-## CloudFront setup
+### CloudFront setup
 <details>
 <summary> Steps </summary>
 <ul>
@@ -76,7 +98,7 @@ eg: arn:aws:s3:::mfe-dashboard/*</li>
 <li>Set HTTP Response Code to 200: OK</li>
 </details>
 
-## Create IAM user
+### Create IAM user
 <details>
 <summary> Steps </summary>
 <ul>
