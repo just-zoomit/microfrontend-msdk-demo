@@ -6,10 +6,10 @@ This sample app serves to demonstrate an example of micro-frontend implementatio
 * booking (micro-frontend app)
 * dashboard (micro-frontend app)
 * msdk (micro-frontend app)
-
+---
 ## Prerequisites :
 * AWS account along with Key containing  S3 and CloudFront access
-
+---
 ### Starting the container app: container
 The container will have all of the mircofrontend. Navigate to the container directory and run the following:
 
@@ -19,6 +19,7 @@ The container will have all of the mircofrontend. Navigate to the container dire
  $ npm start 
 
 ```
+---
 ### Starting the micro-frontend: booking
 You can similarly navigate to the booking directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8081/
 
@@ -27,7 +28,7 @@ You can similarly navigate to the booking directory and run the following comman
  
  $ npm start 
 ```
-
+---
 ### Starting the micro-frontend: auth
 You can similarly navigate to the auth directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8082/
 
@@ -36,6 +37,7 @@ You can similarly navigate to the auth directory and run the following commands 
  
  $ npm start 
 ```
+---
 ### Starting the micro-frontend: msdk 
 You can similarly navigate to the msdk directory and run the following commands to start the micro-frontend. It will serve up the micro-frontend JavaScript bundle at http://localhost:8088/
 
@@ -44,7 +46,7 @@ You can similarly navigate to the msdk directory and run the following commands 
  
  $ npm start 
 ```
-
+---
 ### S3 Bucket Creation and Configuration
 <details>
 <summary> Steps </summary>
